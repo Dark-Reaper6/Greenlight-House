@@ -129,3 +129,21 @@
     -webkit-line-clamp: 3;
     overflow: hidden;
   }
+
+  @media (max-width:860px){
+    .card{
+      width: 82vw;
+      height: 33vh;
+    }
+
+    .the-card-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card .card__overlay {
+    transform: translateY(28%);
+  }
+  }
