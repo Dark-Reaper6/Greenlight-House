@@ -275,7 +275,7 @@ header {
 @media (max-width:770px) {
     .sec4 {
         width: 100vw;
-        height: 500vh;
+        height: 300vh;
     }
 }
 
@@ -284,11 +284,6 @@ footer{
     overflow: hidden;
     display: flex;
 }
-
-/* #wave{
-    transform: scaleX(-1);
-    background: #000;
-} */
 
 .f-svg{
     width: 100%;
@@ -303,14 +298,16 @@ footer{
 footer h1{
     position: absolute;
     z-index: 2;
-    padding: 5px;
+    font-size: 3vw;
+    padding: 1vh;
     color: rgb(236, 236, 236);
     left: 14%;
     margin-top: 11%;
 }
 
 .footer-links h5 a{
-    padding: 5px;
+    font-size: 1.8vw;
+    padding: .7vw;
 }
 
 .footer-links{
@@ -318,15 +315,17 @@ footer h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 13%;
+    margin-top: 14%;
     z-index: 2;
 }
 
 .f1-links-rigth-space{
-    right: 45%;
+    /* right: 45%; */
+    right: 42vw;
 }
 .f2-links-rigth-space{
-    right: 27%;
+    /* right: 27%; */
+    right: 23vw;
 }
 
 .f-link{
@@ -337,19 +336,22 @@ footer h1{
     text-decoration: none;
     display: inline-block;
     color: #fff;
+    font-size: 1.2vw;
 }
 
 .to-top{
     position: absolute;
     z-index: 2;
     text-decoration: none;
-    right: 2%;
+    font-size: 1.2vw;
+    right: 2vw;
     width: 9vw;
+    padding: 3px;
     border: 1px solid #fff;
-    border-radius: 3px;
-    transition: .6s;
+    border-radius: 4px;
+    transition: .5s;
     text-align: center;
-    margin-top: 25%;
+    transform: translateY(25vh);
     color: #fff;
 }
 
@@ -357,8 +359,32 @@ footer h1{
     border-color: #00ba73;
     background: #00ba73;
     color: #fff;
-    /* box-shadow: rgba(255, 255, 255, 0.418) 0px 5px 15px; */
     box-shadow: 0 0 30px #fff;
+}
+
+@media (max-width:860px){
+
+    footer h1{
+        font-size: 4vw;
+        left: 4%;
+    }
+
+    .footer-links h5 a{
+        font-size: 3vw;
+        padding: .1vw;
+    }
+
+    .footer-links a {
+        font-size: 2.4vw;
+    }
+
+    .to-top{
+        font-size: 2vw;
+        right: 3vw;
+        width: 14vw;
+        padding: 5px;
+        transform: translateY(20vh);
+    }
 }
 
 .blob1{
